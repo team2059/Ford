@@ -126,6 +126,7 @@ AddOutputFilter chunkFilter
 			<Item Name="Vision Tracking Processing.vi" Type="VI" URL="../Vision/Vision Tracking Processing.vi"/>
 		</Item>
 		<Item Name="hhVI.lvlib" Type="Library" URL="../../../GitHub/hhVI/hhVI.lvlib"/>
+		<Item Name="PotValueToDegrees.vi" Type="VI" URL="../../PotValueToDegrees.vi"/>
 		<Item Name="Robot Main.vi" Type="VI" URL="../Robot Main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
