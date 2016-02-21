@@ -114,6 +114,17 @@ AddOutputFilter chunkFilter
 			<Property Name="NI.SortType" Type="Int">3</Property>
 			<Item Name="Elapsed Times.vi" Type="VI" URL="../Elapsed Times.vi"/>
 		</Item>
+		<Item Name="Systems" Type="Folder">
+			<Item Name="Sensors" Type="Folder">
+				<Item Name="Get Arm Pot.vi" Type="VI" URL="../Systems/Sensors/Get Arm Pot.vi"/>
+				<Item Name="Get Shooter Encoders.vi" Type="VI" URL="../Systems/Sensors/Get Shooter Encoders.vi"/>
+			</Item>
+			<Item Name="Set Drive.vi" Type="VI" URL="../Systems/Set Drive.vi"/>
+			<Item Name="Set Lift PID.vi" Type="VI" URL="../Systems/Set Lift PID.vi"/>
+			<Item Name="Set Lift Speed.vi" Type="VI" URL="../Systems/Set Lift Speed.vi"/>
+			<Item Name="Set Shooter PID.vi" Type="VI" URL="../Systems/Set Shooter PID.vi"/>
+			<Item Name="Set Shooter Speed.vi" Type="VI" URL="../Systems/Set Shooter Speed.vi"/>
+		</Item>
 		<Item Name="Team Code" Type="Folder">
 			<Item Name="Autonomous Independent.vi" Type="VI" URL="../Autonomous Independent.vi"/>
 			<Item Name="Begin.vi" Type="VI" URL="../Begin.vi"/>
@@ -128,6 +139,7 @@ AddOutputFilter chunkFilter
 		<Item Name="hhVI.lvlib" Type="Library" URL="../hhVI/hhVI.lvlib"/>
 		<Item Name="PotValueToDegrees.vi" Type="VI" URL="../PotValueToDegrees.vi"/>
 		<Item Name="Robot Main.vi" Type="VI" URL="../Robot Main.vi"/>
+		<Item Name="Set Robot Position.vi" Type="VI" URL="../Systems/Set Robot Position.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
@@ -572,6 +584,7 @@ AddOutputFilter chunkFilter
 				<Item Name="WPI_DriverStationStop VI Asynchronous.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/DriverStation/WPI_DriverStationStop VI Asynchronous.vi"/>
 				<Item Name="WPI_EncoderCache.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Encoder/WPI_EncoderCache.vi"/>
 				<Item Name="WPI_EncoderCacheOp.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Encoder/WPI_EncoderCacheOp.ctl"/>
+				<Item Name="WPI_EncoderConfigureTimer.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Encoder/WPI_EncoderConfigureTimer.vi"/>
 				<Item Name="WPI_EncoderDevRef.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Encoder/WPI_EncoderDevRef.ctl"/>
 				<Item Name="WPI_EncoderERRInvalidDistancePerCount.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Encoder/WPI_EncoderERRInvalidDistancePerCount.vi"/>
 				<Item Name="WPI_EncoderGet.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Encoder/WPI_EncoderGet.vi"/>
@@ -767,9 +780,6 @@ AddOutputFilter chunkFilter
 			</Item>
 			<Item Name="Get 4 Motor Drive Refs.vi" Type="VI" URL="../hhVI/Sensors/Get 4 Motor Drive Refs.vi"/>
 			<Item Name="Get camera FOVs.vi" Type="VI" URL="../Vision/Get camera FOVs.vi"/>
-			<Item Name="HypoToDistInches.vi" Type="VI" URL="../HypoToDistInches.vi"/>
-			<Item Name="Joystick axes.vi" Type="VI" URL="../Joystick axes.vi"/>
-			<Item Name="JoystickButtons.vi" Type="VI" URL="../JoystickButtons.vi"/>
 			<Item Name="Label Targets.vi" Type="VI" URL="../Vision/Label Targets.vi"/>
 			<Item Name="Moment Score.vi" Type="VI" URL="../Vision/Moment Score.vi"/>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
