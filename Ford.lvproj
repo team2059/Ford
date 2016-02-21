@@ -125,8 +125,8 @@ AddOutputFilter chunkFilter
 			<Item Name="Test.vi" Type="VI" URL="../Test.vi"/>
 			<Item Name="Vision Tracking Processing.vi" Type="VI" URL="../Vision/Vision Tracking Processing.vi"/>
 		</Item>
-		<Item Name="hhVI.lvlib" Type="Library" URL="../../hhVI/hhVI.lvlib"/>
-		<Item Name="PotValueToDegrees.vi" Type="VI" URL="../../../LabVIEW Data/PotValueToDegrees.vi"/>
+		<Item Name="hhVI.lvlib" Type="Library" URL="../hhVI/hhVI.lvlib"/>
+		<Item Name="PotValueToDegrees.vi" Type="VI" URL="../PotValueToDegrees.vi"/>
 		<Item Name="Robot Main.vi" Type="VI" URL="../Robot Main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
@@ -765,11 +765,11 @@ AddOutputFilter chunkFilter
 			<Item Name="FRC_NetworkCommunication.dll" Type="Document" URL="FRC_NetworkCommunication.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Get 4 Motor Drive Refs.vi" Type="VI" URL="../../hhVI/Sensors/Get 4 Motor Drive Refs.vi"/>
+			<Item Name="Get 4 Motor Drive Refs.vi" Type="VI" URL="../hhVI/Sensors/Get 4 Motor Drive Refs.vi"/>
 			<Item Name="Get camera FOVs.vi" Type="VI" URL="../Vision/Get camera FOVs.vi"/>
-			<Item Name="HypoToDistInches.vi" Type="VI" URL="../../../LabVIEW Data/HypoToDistInches.vi"/>
-			<Item Name="Joystick axes.vi" Type="VI" URL="../../../LabVIEW Data/Joystick axes.vi"/>
-			<Item Name="JoystickButtons.vi" Type="VI" URL="../../../LabVIEW Data/JoystickButtons.vi"/>
+			<Item Name="HypoToDistInches.vi" Type="VI" URL="../HypoToDistInches.vi"/>
+			<Item Name="Joystick axes.vi" Type="VI" URL="../Joystick axes.vi"/>
+			<Item Name="JoystickButtons.vi" Type="VI" URL="../JoystickButtons.vi"/>
 			<Item Name="Label Targets.vi" Type="VI" URL="../Vision/Label Targets.vi"/>
 			<Item Name="Moment Score.vi" Type="VI" URL="../Vision/Moment Score.vi"/>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
@@ -808,7 +808,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{6782B190-04E1-4A41-93AB-3F357B35791E}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_version.build" Type="Int">4</Property>
+				<Property Name="Bld_version.build" Type="Int">5</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>

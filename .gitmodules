@@ -1,3 +1,6 @@
 [submodule "Vision"]
 	path = Vision
 	url = git@github.com:team2059/2016-Vision-Tracking.git
+[submodule "hhVI"]
+	path = hhVI
+	url = git@github.com:team2059/hhVI.git
