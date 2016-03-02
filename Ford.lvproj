@@ -125,6 +125,7 @@ AddOutputFilter chunkFilter
 			<Item Name="Set Lift Speed.vi" Type="VI" URL="../Systems/Set Lift Speed.vi"/>
 			<Item Name="Set Shooter PID.vi" Type="VI" URL="../Systems/Set Shooter PID.vi"/>
 			<Item Name="Set Shooter Speed.vi" Type="VI" URL="../Systems/Set Shooter Speed.vi"/>
+			<Item Name="Vision Tracking Values.vi" Type="VI" URL="../Systems/Vision Tracking Values.vi"/>
 		</Item>
 		<Item Name="Team Code" Type="Folder">
 			<Item Name="Autonomous Independent.vi" Type="VI" URL="../Autonomous Independent.vi"/>
@@ -137,6 +138,7 @@ AddOutputFilter chunkFilter
 			<Item Name="Test.vi" Type="VI" URL="../Test.vi"/>
 			<Item Name="Vision Tracking Processing.vi" Type="VI" URL="../Vision/Vision Tracking Processing.vi"/>
 		</Item>
+		<Item Name="Drive Sensor Reading.vi" Type="VI" URL="../Systems/Drive Sensor Reading.vi"/>
 		<Item Name="hhVI.lvlib" Type="Library" URL="../../hhVI/hhVI.lvlib"/>
 		<Item Name="Inches to Shooter Angle.vi" Type="VI" URL="../Systems/Sensors/Inches to Shooter Angle.vi"/>
 		<Item Name="PotValueToDegrees.vi" Type="VI" URL="../PotValueToDegrees.vi"/>
@@ -818,6 +820,7 @@ AddOutputFilter chunkFilter
 			<Item Name="Normalized Range Compare 2016.vi" Type="VI" URL="../Vision/Normalized Range Compare 2016.vi"/>
 			<Item Name="Sorted Particle Report 2016.vi" Type="VI" URL="../Vision/Sorted Particle Report 2016.vi"/>
 			<Item Name="Vision Global.vi" Type="VI" URL="../Vision/Vision Global.vi"/>
+			<Item Name="Vision Processing.vi" Type="VI" URL="../Vision Processing.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
