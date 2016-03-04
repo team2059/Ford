@@ -27,7 +27,6 @@
 			<Item Name="FRC Simulated.xml" Type="Document" URL="../FRC Simulated.xml"/>
 		</Item>
 		<Item Name="Robot Simulation Readme.html" Type="Document" URL="../Robot Simulation Readme.html"/>
-		<Item Name="Front Wheel Sensors.vi" Type="VI" URL="../Systems/Front Wheel Sensors.vi"/>
 		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
@@ -117,12 +116,17 @@ AddOutputFilter chunkFilter
 		</Item>
 		<Item Name="Systems" Type="Folder">
 			<Item Name="Sensors" Type="Folder">
+				<Item Name="Drive Sensor Reading.vi" Type="VI" URL="../Systems/Drive Sensor Reading.vi"/>
+				<Item Name="Front Wheel Sensors.vi" Type="VI" URL="../Systems/Front Wheel Sensors.vi"/>
 				<Item Name="Get Arm Pot.vi" Type="VI" URL="../Systems/Sensors/Get Arm Pot.vi"/>
 				<Item Name="Get Shooter Encoders.vi" Type="VI" URL="../Systems/Sensors/Get Shooter Encoders.vi"/>
 			</Item>
+			<Item Name="Inches to Shooter Angle.vi" Type="VI" URL="../Systems/Sensors/Inches to Shooter Angle.vi"/>
+			<Item Name="PotValueToDegrees.vi" Type="VI" URL="../PotValueToDegrees.vi"/>
 			<Item Name="Set Drive.vi" Type="VI" URL="../Systems/Set Drive.vi"/>
 			<Item Name="Set Lift PID.vi" Type="VI" URL="../Systems/Set Lift PID.vi"/>
 			<Item Name="Set Lift Speed.vi" Type="VI" URL="../Systems/Set Lift Speed.vi"/>
+			<Item Name="Set Robot Position.vi" Type="VI" URL="../Systems/Set Robot Position.vi"/>
 			<Item Name="Set Shooter PID.vi" Type="VI" URL="../Systems/Set Shooter PID.vi"/>
 			<Item Name="Set Shooter Speed.vi" Type="VI" URL="../Systems/Set Shooter Speed.vi"/>
 			<Item Name="Vision Tracking Values.vi" Type="VI" URL="../Systems/Vision Tracking Values.vi"/>
@@ -138,13 +142,8 @@ AddOutputFilter chunkFilter
 			<Item Name="Test.vi" Type="VI" URL="../Test.vi"/>
 			<Item Name="Vision Tracking Processing.vi" Type="VI" URL="../Vision/Vision Tracking Processing.vi"/>
 		</Item>
-		<Item Name="Drive Sensor Reading.vi" Type="VI" URL="../Systems/Drive Sensor Reading.vi"/>
 		<Item Name="hhVI.lvlib" Type="Library" URL="../../hhVI/hhVI.lvlib"/>
-		<Item Name="Inches to Shooter Angle.vi" Type="VI" URL="../Systems/Sensors/Inches to Shooter Angle.vi"/>
-		<Item Name="PotValueToDegrees.vi" Type="VI" URL="../PotValueToDegrees.vi"/>
 		<Item Name="Robot Main.vi" Type="VI" URL="../Robot Main.vi"/>
-		<Item Name="Set Robot Position.vi" Type="VI" URL="../Systems/Set Robot Position.vi"/>
-		<Item Name="WPI_SonarSRF04DigitalOpen.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Ultrasonic/WPI_SonarSRF04DigitalOpen.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
@@ -549,12 +548,6 @@ AddOutputFilter chunkFilter
 				<Item Name="WPI_CounterDigitalOutputToDigitalSource.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Counter/WPI_CounterDigitalOutputToDigitalSource.vi"/>
 				<Item Name="WPI_CounterEdgeLevel.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Counter/WPI_CounterEdgeLevel.ctl"/>
 				<Item Name="WPI_CounterOpen &amp; Configure.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Counter/WPI_CounterOpen &amp; Configure.vi"/>
-				<Item Name="WPI_CounterOpen External Direction Mode.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Counter/WPI_CounterOpen External Direction Mode.vi"/>
-				<Item Name="WPI_CounterOpen Gear Tooth Sensor Mode.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Counter/WPI_CounterOpen Gear Tooth Sensor Mode.vi"/>
-				<Item Name="WPI_CounterOpen Semi Period Mode.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Counter/WPI_CounterOpen Semi Period Mode.vi"/>
-				<Item Name="WPI_CounterOpen UpDown Mode.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Counter/WPI_CounterOpen UpDown Mode.vi"/>
-				<Item Name="WPI_CounterOpen.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Counter/WPI_CounterOpen.vi"/>
-				<Item Name="WPI_CounterReset.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Counter/WPI_CounterReset.vi"/>
 				<Item Name="WPI_CounterToDigitalSource.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Counter/WPI_CounterToDigitalSource.vi"/>
 				<Item Name="WPI_CounterVerifyDigitalSourceOkWithEdgeType.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Counter/WPI_CounterVerifyDigitalSourceOkWithEdgeType.vi"/>
 				<Item Name="WPI_CounterWARNDigitalSourceAndEdgeType.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Counter/WPI_CounterWARNDigitalSourceAndEdgeType.vi"/>
@@ -581,7 +574,6 @@ AddOutputFilter chunkFilter
 				<Item Name="WPI_DigitalModuleSetRelayReverse.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/DigitalModule/WPI_DigitalModuleSetRelayReverse.vi"/>
 				<Item Name="WPI_DigitalModuleValidateDIOChannel.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/DigitalModule/WPI_DigitalModuleValidateDIOChannel.vi"/>
 				<Item Name="WPI_DigitalOutputDevRef.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/DigitalOutput/WPI_DigitalOutputDevRef.ctl"/>
-				<Item Name="WPI_DigitalOutputOpen.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/DigitalOutput/WPI_DigitalOutputOpen.vi"/>
 				<Item Name="WPI_DisableFilter.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/DigitalInput/Filter/WPI_DisableFilter.vi"/>
 				<Item Name="WPI_DriverStationAllianceInfo.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/DriverStation/WPI_DriverStationAllianceInfo.ctl"/>
 				<Item Name="WPI_DriverStationCreate Lib Version File.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/DriverStation/WPI_DriverStationCreate Lib Version File.vi"/>
@@ -783,7 +775,6 @@ AddOutputFilter chunkFilter
 				<Item Name="WPI_SolenoidSetBool.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Solenoid/Deprecated/WPI_SolenoidSetBool.vi"/>
 				<Item Name="WPI_SolenoidSetEnum.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Solenoid/WPI_SolenoidSetEnum.vi"/>
 				<Item Name="WPI_SolenoidValue.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Solenoid/WPI_SolenoidValue.ctl"/>
-				<Item Name="WPI_UltrasonicDeviceRef.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Ultrasonic/WPI_UltrasonicDeviceRef.ctl"/>
 				<Item Name="WPI_UtilitiesERRGetRefNum.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Utilities/WPI_UtilitiesERRGetRefNum.vi"/>
 				<Item Name="WPI_UtilitiesFRC Build Error.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Utilities/WPI_UtilitiesFRC Build Error.vi"/>
 				<Item Name="WPI_UtilitiesFRCAutomaticValuePublisher.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Utilities/WPI_UtilitiesFRCAutomaticValuePublisher.vi"/>
@@ -798,7 +789,6 @@ AddOutputFilter chunkFilter
 			<Item Name="FRC_NetworkCommunication.dll" Type="Document" URL="FRC_NetworkCommunication.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Front Wheel Sensors.vi" Type="VI" URL="../Systems/Front Wheel Sensors.vi"/>
 			<Item Name="Get 4 Motor Drive Refs.vi" Type="VI" URL="../../hhVI/Sensors/Get 4 Motor Drive Refs.vi"/>
 			<Item Name="Get camera FOVs.vi" Type="VI" URL="../Vision/Get camera FOVs.vi"/>
 			<Item Name="Label Targets.vi" Type="VI" URL="../Vision/Label Targets.vi"/>
