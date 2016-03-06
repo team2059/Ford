@@ -813,6 +813,7 @@ AddOutputFilter chunkFilter
 			<Item Name="Normalized Range Compare 2016.vi" Type="VI" URL="../Vision/Normalized Range Compare 2016.vi"/>
 			<Item Name="Sorted Particle Report 2016.vi" Type="VI" URL="../Vision/Sorted Particle Report 2016.vi"/>
 			<Item Name="Vision Global.vi" Type="VI" URL="../Vision/Vision Global.vi"/>
+			<Item Name="Vision Processing.vi" Type="VI" URL="../Vision Processing.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
