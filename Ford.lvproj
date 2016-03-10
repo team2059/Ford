@@ -131,6 +131,8 @@ AddOutputFilter chunkFilter
 			<Item Name="Set Shooter PID.vi" Type="VI" URL="../Systems/Set Shooter PID.vi"/>
 			<Item Name="Set Shooter Speed.vi" Type="VI" URL="../Systems/Set Shooter Speed.vi"/>
 			<Item Name="Vision Tracking Values.vi" Type="VI" URL="../Systems/Vision Tracking Values.vi"/>
+			<Item Name="Set Shooter Piston.vi" Type="VI" URL="../Systems/Set Shooter Piston.vi"/>
+			<Item Name="PID Aim.vi" Type="VI" URL="../Systems/PID Aim.vi"/>
 		</Item>
 		<Item Name="Team Code" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">3</Property>
@@ -146,8 +148,6 @@ AddOutputFilter chunkFilter
 		</Item>
 		<Item Name="hhVI.lvlib" Type="Library" URL="../hhVI/hhVI.lvlib"/>
 		<Item Name="Robot Main.vi" Type="VI" URL="../Robot Main.vi"/>
-		<Item Name="PID Aim.vi" Type="VI" URL="../Systems/PID Aim.vi"/>
-		<Item Name="Set Shooter Piston.vi" Type="VI" URL="../Systems/Set Shooter Piston.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
