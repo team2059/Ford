@@ -123,11 +123,13 @@ AddOutputFilter chunkFilter
 				<Item Name="Get Shooter Encoders.vi" Type="VI" URL="../Systems/Sensors/Get Shooter Encoders.vi"/>
 				<Item Name="Inches to Shooter Angle.vi" Type="VI" URL="../Systems/Sensors/Inches to Shooter Angle.vi"/>
 				<Item Name="Pot to Degrees.vi" Type="VI" URL="../Systems/Sensors/Pot to Degrees.vi"/>
+				<Item Name="Get Gyro Angle.vi" Type="VI" URL="../Systems/Sensors/Get Gyro Angle.vi"/>
 			</Item>
 			<Item Name="Set Drive.vi" Type="VI" URL="../Systems/Set Drive.vi"/>
 			<Item Name="Set Lift PID.vi" Type="VI" URL="../Systems/Set Lift PID.vi"/>
 			<Item Name="Set Lift Speed.vi" Type="VI" URL="../Systems/Set Lift Speed.vi"/>
 			<Item Name="Set Robot Position.vi" Type="VI" URL="../Systems/Set Robot Position.vi"/>
+			<Item Name="Gyro Drive Straight.vi" Type="VI" URL="../Systems/Sensors/Gyro Drive Straight.vi"/>
 			<Item Name="Set Shooter PID.vi" Type="VI" URL="../Systems/Set Shooter PID.vi"/>
 			<Item Name="Set Shooter Speed.vi" Type="VI" URL="../Systems/Set Shooter Speed.vi"/>
 			<Item Name="Vision Tracking Values.vi" Type="VI" URL="../Systems/Vision Tracking Values.vi"/>
@@ -144,11 +146,12 @@ AddOutputFilter chunkFilter
 			<Item Name="Robot Global Data.vi" Type="VI" URL="../Robot Global Data.vi"/>
 			<Item Name="Teleop.vi" Type="VI" URL="../Teleop.vi"/>
 			<Item Name="Test.vi" Type="VI" URL="../Test.vi"/>
-			<Item Name="Vision Tracking Processing.vi" Type="VI" URL="../Vision/Vision Tracking Processing.vi"/>
 		</Item>
 		<Item Name="hhVI.lvlib" Type="Library" URL="../hhVI/hhVI.lvlib"/>
+		<Item Name="Vision Tracking Processing.vi" Type="VI" URL="../Vision/Vision Tracking Processing.vi"/>
 		<Item Name="Robot Main.vi" Type="VI" URL="../Robot Main.vi"/>
 		<Item Name="N-OrGate.vi" Type="VI" URL="../Systems/N-OrGate.vi"/>
+		<Item Name="isSet.vi" Type="VI" URL="../Systems/Sensors/isSet.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
@@ -786,6 +789,66 @@ AddOutputFilter chunkFilter
 				<Item Name="WPI_Power Get roboRIO Input Voltage and Current.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Power/WPI_Power Get roboRIO Input Voltage and Current.vi"/>
 				<Item Name="WPI_CANTalonSRX_GetStatus.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/CAN/TalonSRX/WPI_CANTalonSRX_GetStatus.vi"/>
 				<Item Name="NI_AALPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALPro.lvlib"/>
+				<Item Name="WPI_GyroDevRef.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Gyro/WPI_GyroDevRef.ctl"/>
+				<Item Name="WPI_GyroRefNum Registry Get.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Gyro/WPI_GyroRefNum Registry Get.vi"/>
+				<Item Name="WPI_GyroXRS450_SPI_GetSet_Data.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Gyro/WPI_GyroXRS450_SPI_GetSet_Data.vi"/>
+				<Item Name="WPI_GyroXRS450_SPI_GetAngle.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Gyro/WPI_GyroXRS450_SPI_GetAngle.vi"/>
+				<Item Name="FPGA_AIReadOffset.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/AI/FPGA_AIReadOffset.vi"/>
+				<Item Name="WPI_AnalogChannelValueToVoltage.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/AnalogChannel/WPI_AnalogChannelValueToVoltage.vi"/>
+				<Item Name="FPGA_AIReadAccumulatorCenter.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/AI/FPGA_AIReadAccumulatorCenter.vi"/>
+				<Item Name="FPGA_AIReadConfig.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/AI/FPGA_AIReadConfig.vi"/>
+				<Item Name="FPGA_AIReadAccumulatorOutput.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/AI/FPGA_AIReadAccumulatorOutput.vi"/>
+				<Item Name="WPI_AccumulatorOffset.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/AnalogChannel/Accumulator/WPI_AccumulatorOffset.vi"/>
+				<Item Name="FPGA_AIReadAverageBits.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/AI/FPGA_AIReadAverageBits.vi"/>
+				<Item Name="WPI_AccumulatorGetOutput.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/AnalogChannel/Accumulator/WPI_AccumulatorGetOutput.vi"/>
+				<Item Name="WPI_GyroDevRefToAnalogChannelDevRef.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Gyro/WPI_GyroDevRefToAnalogChannelDevRef.vi"/>
+				<Item Name="WPI_GyroAnalogGetAngle.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Gyro/WPI_GyroAnalogGetAngle.vi"/>
+				<Item Name="WPI_GyroGetAngle.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Gyro/WPI_GyroGetAngle.vi"/>
+				<Item Name="FPGA_AIGyroChannel.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/AI/FPGA_AIGyroChannel.ctl"/>
+				<Item Name="WPI_GyroChannelToAIChannel.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Gyro/WPI_GyroChannelToAIChannel.vi"/>
+				<Item Name="WPI_AccumulatorReset.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/AnalogChannel/Accumulator/WPI_AccumulatorReset.vi"/>
+				<Item Name="FPGA_AIWriteAccumulatorCenter.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/AI/FPGA_AIWriteAccumulatorCenter.vi"/>
+				<Item Name="WPI_AccumulatorVerifyChannel.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/AnalogChannel/Accumulator/WPI_AccumulatorVerifyChannel.vi"/>
+				<Item Name="WPI_AccumulatorInit.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/AnalogChannel/Accumulator/WPI_AccumulatorInit.vi"/>
+				<Item Name="WPI_AnalogChannelGetOffset.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/AnalogChannel/WPI_AnalogChannelGetOffset.vi"/>
+				<Item Name="FPGA_AIWriteAccumulatorDeadband.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/AI/FPGA_AIWriteAccumulatorDeadband.vi"/>
+				<Item Name="WPI_AnalogChannelVoltageToValue.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/AnalogChannel/WPI_AnalogChannelVoltageToValue.vi"/>
+				<Item Name="WPI_AccumulatorSetConfiguration.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/AnalogChannel/Accumulator/WPI_AccumulatorSetConfiguration.vi"/>
+				<Item Name="WPI_GyroConstants.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Gyro/WPI_GyroConstants.vi"/>
+				<Item Name="WPI_GyroAnalogOpen.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Gyro/WPI_GyroAnalogOpen.vi"/>
+				<Item Name="NI_PtbyPt.lvlib" Type="Library" URL="/&lt;vilib&gt;/ptbypt/NI_PtbyPt.lvlib"/>
+				<Item Name="WPI_Gyro_ADXRS453_SPIToBitArray.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Gyro/ADXRS453/WPI_Gyro_ADXRS453_SPIToBitArray.vi"/>
+				<Item Name="GetSystemError.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/System/GetSystemError.vi"/>
+				<Item Name="spilib_writeread.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/spilib/spilib_writeread.vi"/>
+				<Item Name="WPI_SPIDevRef.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/SPI/WPI_SPIDevRef.ctl"/>
+				<Item Name="WPI_SPIWrite.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/SPI/WPI_SPIWrite.vi"/>
+				<Item Name="WPI_Gyro_ADXRS453_BitArrayToSPI.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Gyro/ADXRS453/WPI_Gyro_ADXRS453_BitArrayToSPI.vi"/>
+				<Item Name="WPI_Gyro_ADXRS453_Bit0OddParity.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Gyro/ADXRS453/WPI_Gyro_ADXRS453_Bit0OddParity.vi"/>
+				<Item Name="WPI_Gyro_ADXRS453_Status.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Gyro/ADXRS453/WPI_Gyro_ADXRS453_Status.ctl"/>
+				<Item Name="WPI_Gyro_ADXRS453_Commands.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Gyro/ADXRS453/WPI_Gyro_ADXRS453_Commands.ctl"/>
+				<Item Name="WPI_Gyro_ADXRS453_ReadSensorData.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Gyro/ADXRS453/WPI_Gyro_ADXRS453_ReadSensorData.vi"/>
+				<Item Name="WPI_GyroXRS450_SPI_Accumulator_Loop.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Gyro/WPI_GyroXRS450_SPI_Accumulator_Loop.vi"/>
+				<Item Name="spilib_read.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/spilib/spilib_read.vi"/>
+				<Item Name="WPI_SPIRead.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/SPI/WPI_SPIRead.vi"/>
+				<Item Name="WPI_Gyro_ADXRS453_Registers.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Gyro/ADXRS453/WPI_Gyro_ADXRS453_Registers.ctl"/>
+				<Item Name="WPI_Gyro_ADXRS453_ReadRegister.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Gyro/ADXRS453/WPI_Gyro_ADXRS453_ReadRegister.vi"/>
+				<Item Name="spilib_setopts.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/spilib/spilib_setopts.vi"/>
+				<Item Name="spilib_setspeed.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/spilib/spilib_setspeed.vi"/>
+				<Item Name="FPGA_SPIWriteChipSelectActiveHigh.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/SPI/FPGA_SPIWriteChipSelectActiveHigh.vi"/>
+				<Item Name="spilib_open.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/spilib/spilib_open.vi"/>
+				<Item Name="WPI_SPI_ERRInvalidSPI_Index.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/SPI/WPI_SPI_ERRInvalidSPI_Index.vi"/>
+				<Item Name="WPI_SPI_ERRSPIAlreadyAllocated.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/SPI/WPI_SPI_ERRSPIAlreadyAllocated.vi"/>
+				<Item Name="WPI_SPIBusCacheOp.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/SPI/WPI_SPIBusCacheOp.ctl"/>
+				<Item Name="WPI_SPIBusCache.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/SPI/WPI_SPIBusCache.vi"/>
+				<Item Name="WPI_SPIMode.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/SPI/WPI_SPIMode.ctl"/>
+				<Item Name="WPI_SPIOpen.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/SPI/WPI_SPIOpen.vi"/>
+				<Item Name="WPI_GyroXRS450_SPI_Open.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Gyro/WPI_GyroXRS450_SPI_Open.vi"/>
+				<Item Name="WPI_GyroOpen.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Gyro/WPI_GyroOpen.vi"/>
+				<Item Name="WPI_GyroRefNum Registry Set.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Gyro/WPI_GyroRefNum Registry Set.vi"/>
+				<Item Name="WPI_GyroXRS450_SPI_Reset.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Gyro/WPI_GyroXRS450_SPI_Reset.vi"/>
+				<Item Name="WPI_GyroAnalogReset.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Gyro/WPI_GyroAnalogReset.vi"/>
+				<Item Name="WPI_GyroReset.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Gyro/WPI_GyroReset.vi"/>
+				<Item Name="WPI_GyroSetGain.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Gyro/WPI_GyroSetGain.vi"/>
 			</Item>
 			<Item Name="Area Scoring.vi" Type="VI" URL="../Vision/Area Scoring.vi"/>
 			<Item Name="Aspect Ratio Score 2016.vi" Type="VI" URL="../Vision/Aspect Ratio Score 2016.vi"/>
@@ -837,7 +900,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{6782B190-04E1-4A41-93AB-3F357B35791E}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_version.build" Type="Int">15</Property>
+				<Property Name="Bld_version.build" Type="Int">30</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>
