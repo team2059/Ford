@@ -124,11 +124,13 @@ AddOutputFilter chunkFilter
 				<Item Name="Inches to Shooter Angle.vi" Type="VI" URL="../Systems/Sensors/Inches to Shooter Angle.vi"/>
 				<Item Name="Pot to Degrees.vi" Type="VI" URL="../Systems/Sensors/Pot to Degrees.vi"/>
 				<Item Name="Get Gyro Angle.vi" Type="VI" URL="../Systems/Sensors/Get Gyro Angle.vi"/>
+				<Item Name="SonarRange.vi" Type="VI" URL="../Systems/Sensors/SonarRange.vi"/>
 			</Item>
 			<Item Name="Set Drive.vi" Type="VI" URL="../Systems/Set Drive.vi"/>
 			<Item Name="Set Lift PID.vi" Type="VI" URL="../Systems/Set Lift PID.vi"/>
 			<Item Name="Set Lift Speed.vi" Type="VI" URL="../Systems/Set Lift Speed.vi"/>
 			<Item Name="Set Robot Position.vi" Type="VI" URL="../Systems/Set Robot Position.vi"/>
+			<Item Name="Set Portcullis Piston.vi" Type="VI" URL="../Systems/Sensors/Set Portcullis Piston.vi"/>
 			<Item Name="Gyro Drive Straight.vi" Type="VI" URL="../Systems/Sensors/Gyro Drive Straight.vi"/>
 			<Item Name="Sensor Change Detection.vi" Type="VI" URL="../Systems/Sensors/Sensor Change Detection.vi"/>
 			<Item Name="N-OrGate.vi" Type="VI" URL="../Systems/N-OrGate.vi"/>
@@ -138,6 +140,7 @@ AddOutputFilter chunkFilter
 			<Item Name="isSet.vi" Type="VI" URL="../Systems/Sensors/isSet.vi"/>
 			<Item Name="Set Shooter Piston.vi" Type="VI" URL="../Systems/Set Shooter Piston.vi"/>
 			<Item Name="PID Aim.vi" Type="VI" URL="../Systems/PID Aim.vi"/>
+			<Item Name="Set Climber Piston.vi" Type="VI" URL="../Systems/Sensors/Set Climber Piston.vi"/>
 		</Item>
 		<Item Name="Team Code" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">3</Property>
@@ -153,10 +156,6 @@ AddOutputFilter chunkFilter
 		</Item>
 		<Item Name="hhVI.lvlib" Type="Library" URL="../hhVI/hhVI.lvlib"/>
 		<Item Name="Robot Main.vi" Type="VI" URL="../Robot Main.vi"/>
-		<Item Name="Wheel Sensor.vi" Type="VI" URL="../Systems/Sensors/Wheel Sensor.vi"/>
-		<Item Name="Set Climber Piston.vi" Type="VI" URL="../Systems/Sensors/Set Climber Piston.vi"/>
-		<Item Name="Set Portcullis Piston.vi" Type="VI" URL="../Systems/Sensors/Set Portcullis Piston.vi"/>
-		<Item Name="SonarRange.vi" Type="VI" URL="../Systems/Sensors/SonarRange.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
@@ -896,6 +895,7 @@ AddOutputFilter chunkFilter
 			<Item Name="Vision Processing.vi" Type="VI" URL="../Vision Processing.vi"/>
 			<Item Name="Get 4 Motor Drive Refs.vi" Type="VI" URL="../hhVI/Sensors/Get 4 Motor Drive Refs.vi"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
+			<Item Name="Wheel Sensor.vi" Type="VI" URL="../Systems/Sensors/Wheel Sensor.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
