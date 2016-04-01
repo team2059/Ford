@@ -111,10 +111,6 @@ AddOutputFilter chunkFilter
 		<Property Name="target.WebServer.ViAccess" Type="Str">+*</Property>
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
-		<Item Name="Support Code" Type="Folder">
-			<Property Name="NI.SortType" Type="Int">3</Property>
-			<Item Name="Elapsed Times.vi" Type="VI" URL="../Elapsed Times.vi"/>
-		</Item>
 		<Item Name="Systems" Type="Folder">
 			<Item Name="Sensors" Type="Folder">
 				<Item Name="Drive Sensor Reading.vi" Type="VI" URL="../Systems/Drive Sensor Reading.vi"/>
@@ -125,6 +121,10 @@ AddOutputFilter chunkFilter
 				<Item Name="Pot to Degrees.vi" Type="VI" URL="../Systems/Sensors/Pot to Degrees.vi"/>
 				<Item Name="Get Gyro Angle.vi" Type="VI" URL="../Systems/Sensors/Get Gyro Angle.vi"/>
 				<Item Name="SonarRange.vi" Type="VI" URL="../Systems/Sensors/SonarRange.vi"/>
+			</Item>
+			<Item Name="Support Code" Type="Folder">
+				<Property Name="NI.SortType" Type="Int">3</Property>
+				<Item Name="Elapsed Times.vi" Type="VI" URL="../Elapsed Times.vi"/>
 			</Item>
 			<Item Name="Set Drive.vi" Type="VI" URL="../Systems/Set Drive.vi"/>
 			<Item Name="Set Lift PID.vi" Type="VI" URL="../Systems/Set Lift PID.vi"/>
@@ -895,7 +895,6 @@ AddOutputFilter chunkFilter
 			<Item Name="Vision Processing.vi" Type="VI" URL="../Vision Processing.vi"/>
 			<Item Name="Get 4 Motor Drive Refs.vi" Type="VI" URL="../hhVI/Sensors/Get 4 Motor Drive Refs.vi"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
-			<Item Name="Wheel Sensor.vi" Type="VI" URL="../Systems/Sensors/Wheel Sensor.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
@@ -915,7 +914,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{6782B190-04E1-4A41-93AB-3F357B35791E}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_version.build" Type="Int">51</Property>
+				<Property Name="Bld_version.build" Type="Int">56</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>
